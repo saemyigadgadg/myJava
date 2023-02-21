@@ -1,0 +1,18 @@
+<meta charset='utf-8'>
+<form action='2.userOut.jsp'> <!-- 해당 페이지로 보내겠다. -->
+	이름: <input type='text' name='userName'/>
+	나이: <input type='number' name='age'/>
+	생일: <input type='date' name='birthday'/>
+	<input type='submit'/>
+</form>
+
+<!-- form을 파라미터 유저가 입력한 
+데이터가 파라미터벨류 name이 파라미터 네임이 된다. -->
+<!-- 
+http://localhost/servlet/ch03/ex02/2.userOut.jsp?userName=%EC%B5%9C%ED%95%9C%EC%84%9D&age=23&birthday=2023-02-21
+
+url에 한글이 포함 될 수있게 incoding 해준다. 서버쪽에선 알아서 decoding 한다.-->
+
+<!--  queryString
+( 물음표 뒤에 = 로 연결된 key value pair 부분)을 
+url 뒤에 덧붙여서 추가적인 정보를 서버 측에 전달하는 것이다. -->
