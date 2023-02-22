@@ -5,6 +5,9 @@
 	String[] jobs = request.getParameterValues("job");
 %>
 
+<%-- getParameterValues : 파라미터 value에서 n개의 파라미터를 모아서 
+	String 으로 변환한다. --%>
+
 <%-- 과제: letters를 iteration해서 출력하라. --%>
 <%-- 과제: letter가 null일 경우 예외처리하라. --%>
 <%
