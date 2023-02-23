@@ -3,3 +3,5 @@
 <c:redirect url='5.target.jsp'>
 	<c:param name='msg' value='한글'/>
 </c:redirect>
+
+<!-- 이런 방법도 있습니다. -->

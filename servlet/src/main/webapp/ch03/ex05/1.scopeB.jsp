@@ -11,7 +11,9 @@ pageContext:  scope은 현재페이지가 실행되는 동안이다.
 request: 	  scope은 클라이언트가 보낼때 살아나고 
 			  request를 클라이언트로 보내기 직전까지 살아있다.
 session: 	  나만의 공간, 로그아웃, 로그인을 구현할때 사용한다.
-		      session이 시작하고 종료될 때까지 scope가 유지된다.
+		      session 객체가 생성되고 삭제될 때까지 scope가 유지된다.
+		      톰캣이 idle 타임을 재서 강제로 죽이거나,
+		      session.invalidate()를 사용해서 죽인다.
 application:  모든 사용자가 공유하는 공간이다. 
 			  scope은 앱이 시작되면 존재하고 앱이 종료되면 사라진다.
  -->
