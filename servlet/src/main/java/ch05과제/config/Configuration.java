@@ -11,10 +11,10 @@ public class Configuration {
 	
 	static {
 		try {
-			Reader reader = Resources.getResourceAsReader("ch05과제/config/sqlMapConfig.xml");
+			Reader reader = Resources.getResourceAsReader("com/my/hr/config/sqlMapConfig.xml");
 			sqlSessionFactory = new SqlSessionFactoryBuilder().build(reader);
 		} catch(Exception e) {
-			e.printStackTrace();
+			e.getStackTrace();
 		}
 	}
 	
