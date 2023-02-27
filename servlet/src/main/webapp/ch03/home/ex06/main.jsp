@@ -14,7 +14,6 @@
 	String msg = request.getParameter("msg");
 	if(msg != null) out.println(msg);
 %>
-
 <!-- 
 과제]
 장바구니에 물건을 담을 때,

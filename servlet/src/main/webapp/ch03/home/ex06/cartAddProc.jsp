@@ -6,6 +6,7 @@
 	Object cartObj = session.getAttribute("cart");
 
 	if(cartObj == null) {
+		
 		if(products != null && products.length > 0) { 
 			List<String> cart = new ArrayList<>();
 			
@@ -13,6 +14,11 @@
 				cart.add(product);
 			
 			session.setAttribute("cart", cart);
+		} else {
+%>
+	<c:redirect url='cartOut.jsp'/>
+			
+<%
 		}
 	} else {
 		List<String> cart = (List<String>)cartObj;
