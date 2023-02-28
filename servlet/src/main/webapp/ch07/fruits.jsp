@@ -9,7 +9,7 @@
 		"price" : 5000
 	},
 	{
-		"fruitNmae": "딸기",
+		"fruitName": "딸기",
 		"price" : 7000
 	}
 ]
