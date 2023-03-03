@@ -1,12 +1,12 @@
-package dao;
+package com.my.hr.dao;
 
 import java.time.LocalDate;
 import java.util.List;
 
-import config.Configuration;
-import dao.map.LaborerMap;
-import domain.Laborer;
-import domain.NoneException;
+import com.my.hr.config.Configuration;
+import com.my.hr.dao.map.LaborerMap;
+import com.my.hr.domain.Laborer;
+import com.my.hr.domain.NoneException;
 
 public class LaborerDaoImpl implements LaborerDao {
 	private LaborerMap laborerMap;
@@ -14,7 +14,7 @@ public class LaborerDaoImpl implements LaborerDao {
 	public LaborerDaoImpl() {
 		this.laborerMap = Configuration.getMapper(LaborerMap.class);
 	}
-
+	
 	@Override
 	public List<Laborer> selectLaborers() {
 		return laborerMap.selectLaborers();
@@ -27,13 +27,15 @@ public class LaborerDaoImpl implements LaborerDao {
 	
 	@Override
 	public void updateLaborer(Laborer laborer) {
-		if(laborerMap.updateLaborer(laborer) == 0) 
-			throw new NoneException("해당 노동자가 없습니다.");
+		if(laborerMap.updateLaborer(laborer) == 0) {
+			throw new NoneException("노동자가 없습니다.");
+		}
 	}
 	
 	@Override
 	public void deleteLaborer(int laborerId) {
-		if(laborerMap.deleteLaborer(laborerId) == 0)
-			throw new NoneException("해당 노동자가 없습니다.");
-	}
+		if(laborerMap.deleteLaborer(laborerId) == 0 ) {
+			throw new NoneException("노동자가 없습니다.");
+		};
+	}	
 }

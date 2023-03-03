@@ -1,4 +1,4 @@
-package domain;
+package com.my.hr.domain;
 
 import java.time.LocalDate;
 
@@ -12,10 +12,9 @@ public class Laborer {
 		this.laborerName = laborerName;
 		this.hireDate = hireDate;
 	}
-
+	
 	@Override
 	public String toString() {
-		return String.format(" {\"laborerId\": %d,\"laborerName\" : \"%s\",\"hireDate\" : \"%s\"} ", laborerId, laborerName, hireDate);
-		
+		return String.format("%2d %-5s %s", laborerId, laborerName, hireDate);
 	}
 }
