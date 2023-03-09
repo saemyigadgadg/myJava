@@ -60,8 +60,8 @@ function init() {
 			method: 'delete',
 			data: JSON.stringify({
 				userId: 5,
-				username: '이샘이',
-				birthday: '2023-05-12'
+				username: '박돈일',
+				birthday: '2023-05-05'
 			}),
 			contentType: 'application/json'
 		}).done(user => console.log(user))
