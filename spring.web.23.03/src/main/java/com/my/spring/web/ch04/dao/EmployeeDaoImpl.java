@@ -7,7 +7,11 @@ import com.my.spring.web.ch04.dao.map.EmployeeMap;
 import com.my.spring.web.ch04.domain.Employee;
 
 @Repository
+<<<<<<< HEAD
 public class EmployeeDaoImpl implements EmployeeDao {
+=======
+public class EmployeeDaoImpl implements EmployeeDao{
+>>>>>>> refs/remotes/origin/master
 	@Autowired private EmployeeMap employeeMap;
 	
 	@Override

@@ -3,6 +3,7 @@
 <script>
 function listUsers() {
 	$.ajax({
+<<<<<<< HEAD
 		url: 'user/list',
 		success: userList => {
 			users = []
@@ -64,6 +65,33 @@ $(() => {
 	ID: <input type='number' id='userId'/><br>
 	이름: <input type='text' id='username'/><br>
 	생일: <input type='date' id='birthday'/><br>	
+=======
+		url: 'user/list',   //현재 주소 ....???
+		//success 핸들러는 배열 객체로 받게 된다.
+		success: userList => {   
+			users = [] //li tag들을 담을 배열 따로 준비 
+			userList.forEach(user => {
+				users.push(
+						'<li>' +
+							user.userId + ', ' +
+							user.username + ', ' +
+							user.birtday +
+						'</li>')
+			})
+			
+			$('#userList').empty()
+			$('#userList').append(users.join(''))
+		}   
+	})
+}
+
+</script>
+
+<form>
+	ID: <input type='number' id='userId'/><br>
+	이름: <input type='text' id='username'/><br>
+	생일: <input type='date' id='birthday'/>
+>>>>>>> refs/remotes/origin/master
 </form>
 
 <nav>

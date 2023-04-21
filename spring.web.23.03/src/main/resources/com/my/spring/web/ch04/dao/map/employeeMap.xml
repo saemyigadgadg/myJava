@@ -2,6 +2,10 @@
 <!DOCTYPE mapper PUBLIC '-//mybatis.org/DTD Mapper 3.0//EN'
 	'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
 <mapper namespace='com.my.spring.web.ch04.dao.map.EmployeeMap'>
+<<<<<<< HEAD
+=======
+<!-- 클래스명 따라 별명이 자동으로 부여된다. -->
+>>>>>>> refs/remotes/origin/master
 	<select id='selectEmployee' resultType='employee'>
 		select employee_id, last_name, hire_date
 		from employees

@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='utf-8' ?>
 <!DOCTYPE mapper PUBLIC '-//mybatis.org/DTD Mapper 3.0//EN'
 	'http://mybatis.org/dtd/mybatis-3-mapper.dtd'>
+<<<<<<< HEAD
 <mapper namespace='com.my.spring.web.ch05.ex02.dao.map.UserMap'>
 	<select id='selectUsers' resultType='user'>
 		select user_id, user_name, birthday
@@ -14,6 +15,21 @@
 	</insert>
 	
 	<update id='updateUser'>
+=======
+<mapper namespace='com.my.spring.web.ch05.dao.map.UserMap'>
+	<select id='selectUsers' resultType='user'>
+		select user_id, user_name, birthday
+		from users
+		order by user_id
+	</select>
+	
+	<insert id='insertUser'>
+		insert into users
+		values(#{userId}, #{username}, #{birthday})
+	</insert>
+	
+	<update id="updateUser">
+>>>>>>> refs/remotes/origin/master
 		update users
 		set user_name = #{username}, birthday = #{birthday}
 		where user_id = #{userId}

@@ -46,4 +46,8 @@ public class UserController {
 	public void delUser(@PathVariable int userId) {
 		userService.delUser(userId);
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> refs/remotes/origin/master

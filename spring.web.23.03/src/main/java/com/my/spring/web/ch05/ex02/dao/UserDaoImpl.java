@@ -20,6 +20,7 @@ public class UserDaoImpl implements UserDao {
 	@Override
 	public int insertUser(User user) {
 		return userMap.insertUser(user);
+<<<<<<< HEAD
 	}
 	
 	@Override
@@ -32,3 +33,17 @@ public class UserDaoImpl implements UserDao {
 		return userMap.deleteUser(userId);
 	}
 }
+=======
+	};
+	
+	@Override
+	public int updateUser(User user) {
+		return userMap.updateUser(user);
+	};
+
+	@Override
+	public int deleteUser(int userId) {
+		return userMap.deleteUser(userId);
+	};
+}
+>>>>>>> refs/remotes/origin/master

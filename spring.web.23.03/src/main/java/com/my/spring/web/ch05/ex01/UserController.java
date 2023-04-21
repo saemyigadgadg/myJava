@@ -30,12 +30,22 @@ public class UserController {
 	public User post(@RequestBody User user) {
 		return user;
 	}
+<<<<<<< HEAD
 	
 	@PutMapping("put")
 	public User put(@RequestBody User user) {
 		return user;
 	}
 	
+=======
+	//@PutMapping : 덮어쓰기 (통째로 변경)
+	@PutMapping("put")
+	public User put(@RequestBody User user) {
+		return user;
+	}
+	
+	//@PatchMapping : 일부를 수정하다
+>>>>>>> refs/remotes/origin/master
 	@PatchMapping("patch")
 	public User patch(@RequestBody User user) {
 		return user;

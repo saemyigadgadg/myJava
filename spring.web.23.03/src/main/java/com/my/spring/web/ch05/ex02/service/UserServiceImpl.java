@@ -15,6 +15,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public List<User> getUsers() {
 		return userDao.selectUsers();
+<<<<<<< HEAD
 	}
 	
 	@Override
@@ -32,3 +33,22 @@ public class UserServiceImpl implements UserService {
 		userDao.deleteUser(userId);
 	}	
 }	
+=======
+	};
+	
+	@Override
+	public void addUser(User user) {
+		userDao.insertUser(user);
+	};
+	
+	@Override
+	public void fixUser(User user) {
+		userDao.updateUser(user);
+	};
+	
+	@Override
+	public void delUser(int userId) {
+		userDao.deleteUser(userId);
+	};
+}
+>>>>>>> refs/remotes/origin/master
