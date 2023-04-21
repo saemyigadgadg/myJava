@@ -4,5 +4,5 @@
 	<li>${pageScope.scope}</li>
 	<li>${requestScope.scope}</li>
 	<li>${sessionScope.scope}</li>
-	<li>${applicatonScope.scope}</li>
+	<li>${applicationScope.scope}</li>
 </ol>
